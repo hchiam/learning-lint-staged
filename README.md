@@ -2,6 +2,8 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
+Automatically include code style fixes in your commits with `lint-staged`, set up with `husky`.
+
 <https://www.npmjs.com/package/lint-staged>
 
 <https://github.com/okonet/lint-staged>
