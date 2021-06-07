@@ -33,6 +33,12 @@ Set up package.json:
 }
 ```
 
+Then:
+
+```bash
+npx mrm lint-staged
+```
+
 ## Starting by testing out this repo
 
 Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
