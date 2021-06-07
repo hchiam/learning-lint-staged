@@ -1,3 +1,3 @@
 function test() {
-  alert("test");
+  alert("try committing without semicolon");
 }
