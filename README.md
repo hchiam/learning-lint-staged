@@ -17,28 +17,18 @@ Using [`yarn`](https://github.com/hchiam/learning-yarn):
 ```bash
 yarn init
 yarn add lint-staged husky prettier
+npx mrm lint-staged
 ```
 
-Set up package.json:
+Then clean up package.json:
 
 ```json
 {
-  ...,
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  ...
   "lint-staged": {
     "*.{js,css,scss,json,md,ts,tsx}": "prettier --write",
   },
 }
-```
-
-Then:
-
-```bash
-npx mrm lint-staged
 ```
 
 ## Starting by testing out this repo
