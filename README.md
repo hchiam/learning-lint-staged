@@ -16,7 +16,7 @@ Using [`yarn`](https://github.com/hchiam/learning-yarn):
 
 ```bash
 yarn init
-yarn add lint-staged husky prettier
+yarn --dev add lint-staged husky prettier
 npx mrm lint-staged
 ```
 
