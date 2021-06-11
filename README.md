@@ -46,6 +46,8 @@ Then clean up your package.json to look something like this:
 }
 ```
 
+**_Note:_** it's important that you use `npm` and include `"prepare": "husky install"` in the package.json file, otherwise when you `git clone` and `npm i`, `lint-staged` might not run.
+
 ## Starting by testing out this repo
 
 Using `npm` (setup after cloning this repo didn't seem to work with [`yarn`](https://github.com/hchiam/learning-yarn)):
