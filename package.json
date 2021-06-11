@@ -5,17 +5,14 @@
   "repository": "https://github.com/hchiam/learning-lint-staged.git",
   "author": "hchiam <hchiam@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {},
   "dependencies": {},
   "lint-staged": {
-    "*.{js,css,scss,json,md,ts,tsx}": "prettier --write",
-    "*.{js,css,scss,md}": "prettier --write"
+    "*.{js,css,scss,json,md,ts,tsx}": "prettier --write"
   },
   "devDependencies": {
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1"
-  },
-  "scripts": {
-    "prepare": "husky install"
   }
 }

@@ -30,8 +30,8 @@ Set up package.json:
     }
   },
   "lint-staged": {
-    "*.{js,css,json,md,ts,tsx}": "prettier --write"
-  }
+    "*.{js,css,scss,json,md,ts,tsx}": "prettier --write",
+  },
 }
 ```
 
