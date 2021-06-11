@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --bail --findRelatedTests",
-    "lint": "prettier --write *.js",
-    "prepare": "husky install"
+    "lint": "prettier --write *.{js,css,scss,json,md,ts,tsx}"
   },
   "dependencies": {},
   "devDependencies": {
@@ -21,7 +20,6 @@
     "**/*.js": [
       "jest --bail --findRelatedTests"
     ],
-    "*.{js,css,scss,json,md,ts,tsx}": "prettier --write",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,scss,json,md,ts,tsx}": "prettier --write"
   }
 }
