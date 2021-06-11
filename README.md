@@ -27,9 +27,9 @@ Then clean up your package.json to look something like this:
   ...
   "scripts": {
     "test": "jest --bail --findRelatedTests",
-    "lint": "prettier --write *.js"
+    "lint": "prettier --write *.{js,css,scss,json,md,ts,tsx}"
   },
-  "dependencies": {...},
+  "dependencies": {},
   "devDependencies": {
     "husky": "^6.0.0",
     "jest": "^27.0.4",
