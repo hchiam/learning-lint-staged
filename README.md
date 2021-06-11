@@ -12,11 +12,11 @@ Automatically include code style fixes in your commits with `lint-staged`, set u
 
 ## From scratch
 
-Using `npm` (setup after cloning this repo didn't seem to work with [`yarn`](https://github.com/hchiam/learning-yarn)):
+Using [`yarn`](https://github.com/hchiam/learning-yarn):
 
 ```bash
-npm init
-npm -D install lint-staged husky prettier jest
+yarn init
+yarn --dev add lint-staged husky prettier jest
 npx mrm lint-staged
 ```
 
@@ -46,11 +46,11 @@ Then clean up your package.json to look something like this:
 }
 ```
 
-**_Note:_** it's important that you use `npm` and include `"prepare": "husky install"` in the package.json file, otherwise when you `git clone` and `npm i`, `lint-staged` might not run.
+**_Note:_** it's important that you include `"prepare": "husky install"` in the package.json file, otherwise when you `git clone` and `yarn`, `lint-staged` might not run.
 
 ## Starting by testing out this repo
 
-Using `npm` (setup after cloning this repo didn't seem to work with [`yarn`](https://github.com/hchiam/learning-yarn)):
+Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
 
 ```bash
 git clone https://github.com/hchiam/learning-lint-staged.git && cd learning-lint-staged && npm install; # and then make changes and try to commit
