@@ -20,14 +20,21 @@ yarn add lint-staged husky prettier
 npx mrm lint-staged
 ```
 
-Then clean up package.json:
+Then your package.json should look something like this:
 
 ```json
 {
   ...
-  "lint-staged": {
-    "*.{js,css,scss,json,md,ts,tsx}": "prettier --write",
+  "scripts": {...},
+  "dependencies": {...},
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
   },
+  "lint-staged": {
+    "*.{js,css,scss,json,md,ts,tsx}": "prettier --write"
+  }
 }
 ```
 
