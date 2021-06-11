@@ -53,5 +53,5 @@ Then clean up your package.json to look something like this:
 Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
 
 ```bash
-git clone https://github.com/hchiam/learning-lint-staged.git && cd learning-lint-staged && npm install; # and then make changes and try to commit
+git clone https://github.com/hchiam/learning-lint-staged.git && cd learning-lint-staged && yarn; # and then make changes and try to commit
 ```
