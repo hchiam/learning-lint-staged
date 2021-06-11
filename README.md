@@ -16,7 +16,7 @@ Using [`yarn`](https://github.com/hchiam/learning-yarn):
 
 ```bash
 yarn init
-yarn --dev add lint-staged husky prettier
+yarn --dev add lint-staged husky prettier jest
 npx mrm lint-staged
 ```
 
@@ -25,7 +25,10 @@ Then clean up your package.json to look something like this:
 ```json
 {
   ...
-  "scripts": {...},
+  "scripts": {
+    "test": "jest --bail --findRelatedTests",
+    "lint": "prettier --write *.js"
+  },
   "dependencies": {...},
   "devDependencies": {
     "husky": "^6.0.0",
@@ -33,6 +36,9 @@ Then clean up your package.json to look something like this:
     "prettier": "^2.3.1"
   },
   "lint-staged": {
+    "**/*.js": [
+      "jest --bail --findRelatedTests"
+    ],
     "*.{js,css,scss,json,md,ts,tsx}": "prettier --write"
   }
 }
