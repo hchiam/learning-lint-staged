@@ -20,7 +20,7 @@ yarn add lint-staged husky prettier
 npx mrm lint-staged
 ```
 
-Then your package.json should look something like this:
+Then clean up your package.json to look something like this:
 
 ```json
 {
