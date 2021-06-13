@@ -16,7 +16,7 @@ Using [`yarn`](https://github.com/hchiam/learning-yarn):
 
 ```bash
 yarn init
-yarn --dev add lint-staged husky prettier jest
+yarn --dev add lint-staged husky@^4.3.0 prettier jest
 npx mrm lint-staged
 ```
 
@@ -36,6 +36,11 @@ Then clean up your package.json to look something like this:
     "jest": "^27.0.4",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "**/*.js": [
