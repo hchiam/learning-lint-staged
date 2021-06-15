@@ -27,12 +27,11 @@ Then clean up your package.json to look something like this:
   ...
   "scripts": {
     "test": "jest --bail --findRelatedTests",
-    "lint": "prettier --write *.{js,css,scss,json,md,ts,tsx}",
-    "prepare": "husky install"
+    "lint": "prettier --write *.{js,css,html,scss,json,md,ts,tsx}"
   },
   "dependencies": {},
   "devDependencies": {
-    "husky": "^6.0.0",
+    "husky": "^4.3.0",
     "jest": "^27.0.4",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1"
@@ -46,7 +45,7 @@ Then clean up your package.json to look something like this:
     "**/*.js": [
       "jest --bail --findRelatedTests"
     ],
-    "*.{js,css,scss,json,md,ts,tsx}": "prettier --write"
+    "*.{js,css,html,scss,json,md,ts,tsx}": "prettier --write"
   }
 }
 ```
